@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateJWT async="false" continueOnError="false" enabled="true" name="GenJWT-TokenRequest">
+    <DisplayName>Gen JWT for Token Request</DisplayName>
+    <Algorithm>RS256</Algorithm>
+    <PrivateKey>
+        <Value ref="private.sa-key-value"/>
+        <Id ref="private.sa-key-id"/>
+    </PrivateKey>
+    <Subject ref="client_email"/>
+    <Issuer ref="client_email"/>
+    <Audience ref="token_uri"/>
+    <ExpiresIn>1h</ExpiresIn>
+    <AdditionalClaims ref="additional_claims"/>
+    <OutputVariable>token_request_jwt</OutputVariable>
+</GenerateJWT>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="gcp-sa-cloudrun">
+    <Basepaths>/gcp-sa-cloudrun</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1603106795858</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Apigee to Cloud Run API call with authorization via service account</Description>
+    <DisplayName>gcp-sa-cloudrun</DisplayName>
+    <LastModifiedAt>1603107593154</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:01b3cc899370c9f4ffc1dffa40ca4e10f1912bac719baf51783fd2c37670a3c5f24efa7f234957099fa50fd87da56f1719217e463a40d7bb790e8e988f4b27d2</ManifestVersion>
+    <Policies>
+        <Policy>GJ-GetTokenJWT</Policy>
+        <Policy>JS-SetContext</Policy>
+        <Policy>JS-SetTokenHeader</Policy>
+        <Policy>SC-GetToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://set-context.js</Resource>
+        <Resource>jsc://set-token-header.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-GetToken">
+    <DisplayName>SC-GetToken</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="token_request">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+        <Add>
+            <FormParams>
+                <FormParam name="grant_type">urn:ietf:params:oauth:grant-type:jwt-bearer</FormParam>
+                <FormParam name="assertion">{token_request_jwt}</FormParam>
+            </FormParams>
+        </Add>
+    </Request>
+    <Response>token_response</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://oauth2.googleapis.com/token</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

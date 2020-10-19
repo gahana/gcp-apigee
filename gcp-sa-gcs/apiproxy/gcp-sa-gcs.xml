@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="gcp-sa-gcs">
+    <Basepaths>/gcp-sa-gcs</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1603105765600</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description>Apigee to GCS call with authorization via service account</Description>
+    <DisplayName>gcp-sa-gcs</DisplayName>
+    <LastModifiedAt>1603105765600</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:3801055ba04db3c116bbadcd57d24c17f65b3a23a975ba755594f6af1a80b19c7495dcea52d905e4858c30f28c416b8919d06681b6fb41db70a4a3ecf5e9ab7d</ManifestVersion>
+    <Policies>
+        <Policy>GenJWT-TokenRequest</Policy>
+        <Policy>JS-SetContext</Policy>
+        <Policy>JS_SetJWTHeader</Policy>
+        <Policy>SC-TokenRequest</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>SC-TokenRequest</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://set-context.js</Resource>
+        <Resource>jsc://set-jwt-header.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

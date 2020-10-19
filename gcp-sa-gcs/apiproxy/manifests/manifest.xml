@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="GenJWT-TokenRequest" version="SHA-512:da956b266b0c6026ed78f456ae47e246e721e21a0ea440d2d3566f8aa333be101c2fd5be04d8bd6f3a8cbb3bc2c3dcbab676b19e73690a89c13e602533ce9b53"/>
+        <VersionInfo resourceName="JS-SetContext" version="SHA-512:2fa624386ee144b05e036cf24f10e0917276f5ecadcb6e67640772c87b8af96d0712113acb706d11bdfb7bd78c2158a652366e30d406291eb4a9b78a13f21bf8"/>
+        <VersionInfo resourceName="JS_SetJWTHeader" version="SHA-512:962103e93513a3744a146360547be73d5d5abedf417ed983ef08144092ecb085caec2d059eb2a9ceb4a5e870dd6eeef02e0418ebc928e0ce46eb2921136ca62a"/>
+        <VersionInfo resourceName="SC-TokenRequest" version="SHA-512:efe975eb363612db6fd4666abd415e7645a68fe25a04eefd76019de46b144a139a2663d0492b12cabf8fc2c9bde50ddf353a81de17a48d73c08b4758897e0a57"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="SC-TokenRequest" version="SHA-512:280e195262c9c1510c953d7b6d4f970fd8efea4225ba4678282fde9f3e2e74eb332c1c417bd8cd47e3304170680af4e6776ce61863a2c5c428423f94db78c982"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://set-context.js" version="SHA-512:0c6b6d39344ee2bfc4859d724a878ac801e744eca0178f05754043ff0e5056a34a0b2894cbbe67b77b3b28a3aa42c804f76c4011398fb3e6deefe2c84246d850"/>
+        <VersionInfo resourceName="jsc://set-jwt-header.js" version="SHA-512:b01622da235e548adff24ebb272b70d71e524f45cc6181d7407dfc4dd0c988a307ab320c995f6bf5543b51ac7ce139e97d4401beb8a0cb8da690bf77b6300965"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:987f153e9746618a981c551212830471d1b9ff119fad87c4f7e68558bd0ce2a289f75dab08016188863bb45696e17e328233961477ad3ac18ca3e1e18d8424e4"/>
+    </TargetEndpoints>
+</Manifest>
