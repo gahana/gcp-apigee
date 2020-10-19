@@ -3,11 +3,11 @@
 Apigee API Proxies to invoke GCP APIs
 
 ## Prerequisites
-Use (apigeetool)[https://www.npmjs.com/package/apigeetool] to deploy proxies in this repository
+Use [apigeetool](https://www.npmjs.com/package/apigeetool) to deploy proxies in this repository
 
-You'll need (get_token)[https://docs.apigee.com/api-platform/system-administration/using-gettoken] utility to get valid tokens for deploying proxies.
+You'll need [get_token](https://docs.apigee.com/api-platform/system-administration/using-gettoken) utility to get valid tokens for deploying proxies.
 
-(Create a GCP service account)[https://cloud.google.com/iam/docs/creating-managing-service-accounts] with the right role/permission to invoke the API. Also (create private/public keys)[https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys] for the service account. 
+[Create a GCP service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) with the right role/permission to invoke the API. Also [create private/public keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys) for the service account. 
 
 ## Install
 Download or clone this repository
